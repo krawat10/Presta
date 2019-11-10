@@ -1,0 +1,70 @@
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>SELECT *
+FROM `ps_currency` a
+LEFT JOIN `ps_currency_shop` `c` ON a.`id_currency` = c.`id_currency` AND c.`id_shop` = 1
+WHERE (a.`id_currency` = 1) LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+				SELECT t.*, tl.name
+				FROM `ps_tab` t
+				LEFT JOIN `ps_tab_lang` tl ON (t.`id_tab` = tl.`id_tab` AND tl.`id_lang` = 1)
+				WHERE 1 
+				ORDER BY t.`position` ASC</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+				SELECT t.*, tl.name
+				FROM `ps_tab` t
+				LEFT JOIN `ps_tab_lang` tl ON (t.`id_tab` = tl.`id_tab` AND tl.`id_lang` = 1)
+				WHERE 1 
+				ORDER BY t.`position` ASC</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+			SELECT t.`class_name`, t.`module`
+			FROM `ps_tab` t
+			WHERE t.`module` IS NOT NULL AND t.`module` != ""</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+			SELECT t.`class_name`, t.`module`
+			FROM `ps_tab` t
+			WHERE t.`module` IS NOT NULL AND t.`module` != ""</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+		SELECT `id_employee`
+		FROM `ps_employee`
+		WHERE `id_employee` = 1
+		AND `passwd` = '8af06db2a7a63857fb3ac1be5bb783b1'
+		AND `active` = 1 LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>SELECT *
+FROM `ps_product` a
+LEFT JOIN `ps_product_shop` `c` ON a.`id_product` = c.`id_product` AND c.`id_shop` = 1
+WHERE (a.`id_product` = 11) LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>SELECT *
+FROM `ps_product` a
+LEFT JOIN `ps_product_shop` `c` ON a.`id_product` = c.`id_product` AND c.`id_shop` = 1
+WHERE (a.`id_product` = 12) LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>
+				SELECT c.id_category, cl.name
+				FROM `ps_category` c
+				 INNER JOIN ps_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+				LEFT JOIN `ps_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+				
+				RIGHT JOIN `ps_category` c2 ON c2.`id_category` = 2 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+				WHERE 1  AND `id_lang` = 1
+				
+				
+				
+				 ORDER BY c.`level_depth` ASC
+				, category_shop.`position` ASC
+				</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:24: Lost connection to MySQL server during query<br /><br /><pre>SELECT *
+FROM `ps_product` a
+LEFT JOIN `ps_product_shop` `c` ON a.`id_product` = c.`id_product` AND c.`id_shop` = 1
+WHERE (a.`id_product` = 11) LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:25: Lost connection to MySQL server during query<br /><br /><pre>SELECT `version` FROM `ps_module` WHERE `name` = 'gamification' LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 13:35:25: Lost connection to MySQL server during query<br /><br /><pre>SELECT UNIX_TIMESTAMP(last_flush) as last_flush FROM `ps_smarty_last_flush` WHERE type='compile' LIMIT 1</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 14:21:21: Duplicate entry '231-252-1' for key 'PRIMARY'<br /><br /><pre>
+			INSERT INTO `ps_layered_product_attribute` (`id_attribute`, `id_product`, `id_attribute_group`, `id_shop`)
+			SELECT pac.id_attribute, pa.id_product, ag.id_attribute_group, product_attribute_shop.`id_shop`
+			FROM ps_product_attribute pa INNER JOIN ps_product_attribute_shop product_attribute_shop
+		ON (product_attribute_shop.id_product_attribute = pa.id_product_attribute AND product_attribute_shop.id_shop = 1)
+			INNER JOIN ps_product_attribute_combination pac ON pac.id_product_attribute = pa.id_product_attribute
+			INNER JOIN ps_attribute a ON (a.id_attribute = pac.id_attribute)
+			INNER JOIN ps_attribute_group ag ON ag.id_attribute_group = a.id_attribute_group
+			AND pa.id_product = 252
+			GROUP BY a.id_attribute, pa.id_product , product_attribute_shop.`id_shop`</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2019/10/20 - 14:53:11: Duplicate entry '558-1' for key 'id_product_cover'<br /><br /><pre>INSERT INTO `ps_image` (`id_product`, `position`, `cover`) VALUES ('558', '2', '1')</pre> at line 791 in file classes/db/Db.php

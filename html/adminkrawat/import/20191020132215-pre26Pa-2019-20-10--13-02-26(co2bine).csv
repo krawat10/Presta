@@ -1,0 +1,13 @@
+Product ID*;Attribute (Name:Type:Position)*;Value (Value:Position)*;Default (0 = No, 1 = Yes);Quantity;Minimal quantity
+1;Size:select:1;34:1;1;3;1
+1;Size:select:2;36:2;0;11;1
+1;Size:select:3;38:3;0;1;1
+1;Size:select:4;40:4;0;4;1
+1;Size:select:5;42:5;0;21;1
+1;Size:select:6;44:6;0;25;1
+2;Size:select:1;XS:1;1;26;1
+2;Size:select:2;S:2;0;1;1
+2;Size:select:3;M:3;0;22;1
+2;Size:select:4;L:4;0;9;1
+2;Size:select:5;XL:5;0;5;1
+2;Size:select:6;XXL:6;0;13;1

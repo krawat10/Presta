@@ -1,0 +1,13 @@
+Product ID*;Attribute (Name:Type:Position)*;Value (Value:Position)*;Supplier reference;Reference;EAN13
+1;Size:select:0;34:0;RF-demo_1_34;RF-demo_1_34;994193262416
+1;Size:select:0;36:0;RF-demo_1_36;RF-demo_1_36;994193262416
+1;Size:select:0;38:0;RF-demo_1_38;RF-demo_1_38;994193262416
+1;Size:select:0;40:0;RF-demo_1_40;RF-demo_1_40;994193262416
+1;Size:select:0;42:0;RF-demo_1_42;RF-demo_1_42;994193262416
+1;Size:select:0;44:0;RF-demo_1_44;RF-demo_1_44;994193262416
+2;Size:select:0;XS:0;RF-demo_2_XS;RF-demo_2_XS;6439436159501
+2;Size:select:0;S:0;RF-demo_2_S;RF-demo_2_S;6439436159501
+2;Size:select:0;M:0;RF-demo_2_M;RF-demo_2_M;6439436159501
+2;Size:select:0;L:0;RF-demo_2_L;RF-demo_2_L;6439436159501
+2;Size:select:0;XL:0;RF-demo_2_XL;RF-demo_2_XL;6439436159501
+2;Size:select:0;XXL:0;RF-demo_2_XXL;RF-demo_2_XXL;6439436159501
