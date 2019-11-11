@@ -1,8 +1,8 @@
-/admin-dev/autoupgrade/
-/cache/
-/config/xml/*.xml
-/log/
+/html/admin-dev/autoupgrade/
+/html/cache/
+/html/config/xml/*.xml
+/html/log/
 *sitemap.xml
-/themes/*/cache/
-/modules/*/config*.xml
+/html/themes/*/cache/
+/html/modules/*/config*.xml
 
